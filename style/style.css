@@ -1,0 +1,431 @@
+/* ====================================
+   CSS UTAMA ABYSCOMPANY
+   Dibuat Manual - Style Impresif & Clean
+   ==================================== */
+
+/* Reset dasar browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #2b2b2b;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Container pembungkus utama */
+.wrap {
+    width: 88%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Layout Komponen Umum */
+.sec-padding {
+    padding: 70px 0;
+}
+
+.bg-abu {
+    background-color: #f4f6f8;
+}
+
+.judul-bagian {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 45px;
+    color: #111111;
+    position: relative;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Header & Navbar */
+#header-utama {
+    background-color: #ffffff;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.brand-logo a {
+    font-size: 22px;
+    font-weight: 800;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.brand-logo a span {
+    color: #0056b3;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.menu-nav a:hover {
+    color: #0056b3;
+}
+
+.btn-kontak {
+    background-color: #0056b3;
+    color: #fff !important;
+    padding: 9px 18px;
+    border-radius: 4px;
+}
+
+.btn-kontak:hover {
+    background-color: #003d82;
+}
+
+/* Hamburger Menu Mobile */
+.tombol-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.tombol-mobile .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.hero-banner {
+    padding-top: 140px; 
+    padding-bottom: 80px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    background-color: #1a232a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 850px; 
+    margin: 0 auto; 
+}
+
+/* Mengatur Gambar di Dalam Hero */
+.hero-banner img {
+    display: block;
+    width: 100%; 
+    max-width: 750px;  
+    height: auto;
+    margin: 35px auto 0 auto;
+    border-radius: 8px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+
+.hero-text img {
+    display: block;
+    margin: 30px auto 0 auto; 
+    max-width: 100%;           
+    height: auto;
+    border-radius: 8px;       
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #b0bec5;
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+}
+
+.group-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-utama, .btn-outline {
+    padding: 12px 26px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn-utama {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-utama:hover {
+    background-color: #004085;
+}
+
+.btn-outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #1a232a;
+}
+
+/* Bagian Tentang (About) */
+.col-kiri {
+    flex: 1.2;
+}
+
+.col-kiri h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.col-kiri p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.col-kanan {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box-pengalaman {
+    background-color: #eef5fc;
+    border-left: 5px solid #0056b3;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.box-pengalaman .angka {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.box-pengalaman .label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Grid Layanan */
+.grid-layanan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.item-layanan {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.icon-box {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.item-layanan h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.item-layanan p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Grid Portofolio */
+.grid-portofolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-proto {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.thumb-proto {
+    height: 180px;
+    background-color: #34495e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.info-proto {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.info-proto h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.info-proto p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Form & Informasi Kontak */
+.col-info, .col-form {
+    flex: 1;
+}
+
+.list-kontak {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list-kontak li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#formKontak {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-box input:focus, .input-box textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.btn-kirim {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-kirim:hover {
+    background-color: #003d82;
+}
+
+/* Footer */
+#footer-bawah {
+    background-color: #111111;
+    color: #888888;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+/* Media Query untuk Responsif HP */
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .grid-layanan, .grid-portofolio {
+        grid-template-columns: 1fr;
+    }
+
+    .tombol-mobile {
+        display: flex;
+    }
+
+    .menu-nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu-nav.show {
+        display: flex;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+}
+
+
+.thumb-proto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
